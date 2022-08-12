@@ -47,12 +47,12 @@
 	<table class="table">
 		<thead class="thead-light">
 			<th ></th>
-			<th >Venue</th>
+			<th >Artist</th>
 			<th >View</th>
 		</thead>
 		{% for venue in venues %}
 		<tbody>
-			<td><a href="/venues/{{ venue.id }}"><i class="fas fa-music"></i></a></td>
+			<td><a href="/venues/{{ venue.id }}"><i class="fas fa-users"></i></a></td>
 			<td>{{ venue.name }}</td>
 			<td><button type="button" class="btn btn-outline-secondary"><a href="/veneus/{{ venue.id }}">View</a></button></td>
 		</tbody>
