@@ -23,6 +23,7 @@ import sys
 app = Flask(__name__)
 moment = Moment(app)
 app.config.from_object('config')
+app.config['SECRET_KEY'] = '3cd0bf26f393b9c6b6f719c2be08a535'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 db = SQLAlchemy(app)
 
